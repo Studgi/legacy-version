@@ -78,10 +78,11 @@ func NewBlockMapping(raw []byte) *DefaultBlockMapping {
 	}
 
 	return &DefaultBlockMapping{
-		states:           states,
-		stateRuntimeIDs:  stateRuntimeIDs,
-		runtimeIDToState: runtimeIDToState,
-		airRID:           *airRID,
+		states:             states,
+		stateRuntimeIDs:    stateRuntimeIDs,
+		runtimeIDToState:   runtimeIDToState,
+		airRID:             *airRID,
+		infoUpdateBlockRID: *infoUpdateBlockRID,
 	}
 }
 
