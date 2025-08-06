@@ -2,8 +2,9 @@ package mapping
 
 import (
 	"bytes"
-	"github.com/akmalfairuz/legacy-version/internal"
 	"sort"
+
+	"github.com/akmalfairuz/legacy-version/internal"
 
 	"github.com/df-mc/worldupgrader/blockupgrader"
 	"github.com/sandertv/gophertunnel/minecraft/nbt"

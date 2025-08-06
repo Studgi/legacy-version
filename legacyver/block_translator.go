@@ -3,6 +3,7 @@ package legacyver
 import (
 	"bytes"
 	_ "embed"
+
 	"github.com/akmalfairuz/legacy-version/internal/chunk"
 	"github.com/akmalfairuz/legacy-version/mapping"
 	"github.com/df-mc/dragonfly/server/block/cube"
