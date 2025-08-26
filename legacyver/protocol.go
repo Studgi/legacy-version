@@ -155,6 +155,10 @@ func (p *Protocol) Packets(listener bool) packet.Pool {
 	return packetPoolServer
 }
 
+func (p *Protocol) Encryption(key [32]byte) packet.Encryption {
+	return packet.NewCTREncryption(key[:])
+}
+
 func (p *Protocol) NewReader(r minecraft.ByteReader, shieldID int32, enableLimits bool) protocol.IO {
 	return proto.NewReader(protocol.NewReader(r, shieldID, enableLimits), p.id)
 }
